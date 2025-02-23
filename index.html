@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หวัดดีอ้วน คือเรามาง้ออะ</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: rgb(0, 0, 0);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        button {
+            background-color: #FFCCCC;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #FFCCCC;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 80%;
+            margin-top: 20px;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            height:100%;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>หวัดดีอ้วน คือเรามาง้ออะ</h1>
+    <p>คือแบบว่า เราก็ขอโทษ เราทําอั้นนี้มาง้อกับมาโอ๋พี่อะ รักนะ ขอโทษที่ทําให้ไม่สบายใจทําให้เสียใจบ่อยๆ แต่รักพี่มากๆเลยนะ โครตรักพี่เลย ไม่สนใจคนอื่นอะ คนอื่นไม่มีใครดีเท่าพี่เกวละ พี่เกวดีที่สุดเลย รักพี่เกวมากมากมากมากมากที่สุดในโลกเลย ขอโทษที่ทําให้เสียใจ กลับมากอดกันนะ  เค้าจะทําให้เธอกลับมาเชื่อใจเค้าเอง ขอแค่อย่ามีคนอื่นก็พอ รักนะอ้วน จุ๊บๆ หวังว่าเธอจะอ่านจนหมด มีแค่นี้แหละ พิมพ์เยอะมันไม่ดี</p>
+    <button onclick="playMusic()">ลองกดดูดิ มีเพลงด้วยนะ เพลงนี้เลือกมาจากใจ เพลงดังนะ</button>
+    <audio id="loveSong" src="your-song.mp3.mp3.mp3"></audio>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="gf1.jpg" class="d-block w-100" alt="..." width="500"height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="เมีย2.jpg" class="d-block w-100" alt="..." width="500"height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="เมีย3.jpg" class="d-block w-100" alt="..." width="500"height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="เมีย4.jpg" class="d-block w-100" alt="..." width="500"height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="เมีย5.jpg" class="d-block w-100" alt="..." width="500"height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="เมีย6.jpg" class="d-block w-100" alt="..." width="500"height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="เมีย7.jpg" class="d-block w-100" alt="..." width="500"height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="เมีย8.jpg" class="d-block w-100" alt="..." width="500"height="500">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    <script>
+        function playMusic() {
+            const song = document.getElementById("loveSong");
+            if (song.paused) {
+                song.play();
+            } else {
+                song.pause();
+                song.currentTime = 0;
+            }
+        }
+    </script>
+</body>
+<p> ไม่ใส่รูปเยอะ พึ่งหัดทํา รักนะเว้ยอว้นนนน ฑโครตรักเธอเลย อาจดื้อบ้างมึนบ้าง นิสัยไม่ดี แต่เค้าจะพยายามปรับนะ อยากมีอ้วนอยู่ในทุกช่วงเวลาเลยนะ จนโตอะ จนเค้าตายอะ โครตๆๆๆๆๆรักเธอเลย ไม่อยากให้เธอทิ้ง อยากอยู่กับเธอ อยากพาเธอข้ามถนน อยากพาเธอไปกินกะเต๋ว แต่อ้วนก็จบม6แระ ถือว่าเอาอันนี้อวยพรเลยนะ       จะบอกว่า ขอให้มีเพื่อนดีๆเยอะๆกินแอลน้อยๆ มีความสุขมากๆความสุขล้นๆ อยากทําไรก็ได้ทํา ยกเว้นกินเหล้ากับไปเที่ยวถามเค้าก่อนเดะเค้าใจแตก ขอให้หลังจากนี้อ้วนมีความสุขเยอะๆ แต่ก็อย่าทิ้งเค้านะ ถึงเค้าจะเรียนรร วัดก็อย่าทิ้งเลย อยากอยู่ด้วยนะ รักอ้วนโว็ยยย </p>
+</html>
